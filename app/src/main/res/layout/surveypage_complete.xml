@@ -10,6 +10,6 @@
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:gravity="center"
-        android:text="All surveys completed."
+        android:text="所有問卷都已經完成"
         android:textSize="24sp" />
 </LinearLayout>

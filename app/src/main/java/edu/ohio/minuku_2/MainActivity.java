@@ -135,12 +135,13 @@ public class MainActivity extends AppCompatActivity {
             Button finalSurvey = (Button) findViewById(R.id.finalSurvey);
 
             boolean isFinalButtonClicked = sharedPrefs.getBoolean("finalButtonClicked", false);
-
             String finalButtonText = "PART C\n20 minutes";
             Spannable spannable = new SpannableString(finalButtonText);
             spannable.setSpan(new StyleSpan(Typeface.NORMAL), 0, 6,Spannable.SPAN_INCLUSIVE_INCLUSIVE);
             spannable.setSpan(new RelativeSizeSpan(0.5f), 7, finalButtonText.length(),Spannable.SPAN_INCLUSIVE_INCLUSIVE);
             finalSurvey.setTextSize(30);
+
+            // TODO:CHT
             finalSurvey.setText(spannable);
             finalSurvey.setTransformationMethod(null);
 
@@ -170,7 +171,7 @@ public class MainActivity extends AppCompatActivity {
 
             user_id = (TextView) findViewById(R.id.userid);
             Config.USER_ID = sharedPrefs.getString("userid","NA");
-            user_id.setText("Confirmation #:" );
+            user_id.setText("認證編號:" );
 
             num_6_digit = (TextView) findViewById(R.id.group_num);
             Config.GROUP_NUM = sharedPrefs.getString("groupNum","NA");
@@ -222,6 +223,7 @@ public class MainActivity extends AppCompatActivity {
             spannable.setSpan(new StyleSpan(Typeface.NORMAL), 0, 6,Spannable.SPAN_INCLUSIVE_INCLUSIVE);
             spannable.setSpan(new RelativeSizeSpan(0.5f), 7, finalButtonText.length(),Spannable.SPAN_INCLUSIVE_INCLUSIVE);
             finalSurvey.setTextSize(30);
+            // TODO:CHT
             finalSurvey.setText(spannable);
             finalSurvey.setTransformationMethod(null);
 
@@ -251,7 +253,7 @@ public class MainActivity extends AppCompatActivity {
 
             user_id = (TextView) findViewById(R.id.userid);
             Config.USER_ID = sharedPrefs.getString("userid","NA");
-            user_id.setText("Confirmation #:" );
+            user_id.setText("認證編號:" );
 
             num_6_digit = (TextView) findViewById(R.id.group_num);
             Config.GROUP_NUM = sharedPrefs.getString("groupNum","NA");
@@ -336,7 +338,7 @@ public class MainActivity extends AppCompatActivity {
 
         user_id = (TextView) findViewById(R.id.userid);
         Config.USER_ID = sharedPrefs.getString("userid", "NA");
-        user_id.setText("Confirmation #:");
+        user_id.setText("認證編號:");
 
         num_6_digit = (TextView) findViewById(R.id.group_num);
         Config.GROUP_NUM = sharedPrefs.getString("groupNum", "NA");
@@ -416,11 +418,11 @@ public class MainActivity extends AppCompatActivity {
             else
                 sleepEndHourStr = String.valueOf(sleepEndHour - 12) + ":" + sleepEndDetail[1] + " pm";
 
-            sleepingtime.setText("Sleep: " + sleepStartHourStr + " to " + sleepEndHourStr);
+            sleepingtime.setText("睡眠時間: " + sleepStartHourStr + " 到 " + sleepEndHourStr);
 
         } else {
 
-            sleepingtime.setText("Set Sleep Time");
+            sleepingtime.setText("設定睡眠時間");
         }
 
     }
@@ -517,7 +519,7 @@ public class MainActivity extends AppCompatActivity {
 
                             sharedPrefs.edit().putString("userid", inputID).apply();
                             Config.USER_ID = sharedPrefs.getString("userid", "NA");
-                            user_id.setText("Confirmation #");
+                            user_id.setText("認證編號:");
 
                             sharedPrefs.edit().putString("groupNum", inputID.substring(0, 1)).apply();
                             Config.GROUP_NUM = sharedPrefs.getString("groupNum", "NA");
@@ -846,7 +848,7 @@ public class MainActivity extends AppCompatActivity {
                         else
                             sleepEndHourStr = String.valueOf(sleepEndHour-12)+":"+sleepEndDetail[1]+" pm";
 
-                        sleepingtime.setText("Sleep: " + sleepStartHourStr + " to " + sleepEndHourStr);
+                        sleepingtime.setText("睡眠時間: " + sleepStartHourStr + " 到 " + sleepEndHourStr);
 
                         sharedPrefs.edit().putBoolean("resetIntervalSurveyFlag", true).apply();
 
@@ -856,7 +858,7 @@ public class MainActivity extends AppCompatActivity {
                     }
                     else {
 
-                        sleepingtime.setText("Set Sleep Time");
+                        sleepingtime.setText("設定睡眠時間");
                     }
                     break;
             }

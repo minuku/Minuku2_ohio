@@ -12,6 +12,6 @@
         android:gravity="center"
         android:paddingLeft="16dp"
         android:paddingRight="16dp"
-        android:text="Your survey links will begin tomorrow and continue for a total of 14 days."
+        android:text="問卷將從明天開始，且連續 14 天都會提供問卷"
         android:textSize="24sp" />
 </LinearLayout>

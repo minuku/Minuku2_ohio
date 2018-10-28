@@ -109,9 +109,9 @@ public class OhioListAdapter extends ArrayAdapter<Session> {
 
             String today_yesterday;
             if(StartTimeDate.equals(CurrentTimeDate)){
-                today_yesterday = "Today";
+                today_yesterday = "昨天";
             }else{
-                today_yesterday = "Yesterday";
+                today_yesterday = "今天";
             }
 
             sessionTitle = today_yesterday + " " + timeLabel + "    " + labelStr;

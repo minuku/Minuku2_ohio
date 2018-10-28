@@ -10,7 +10,7 @@
         android:layout_height="wrap_content"
         android:paddingLeft="16dp"
         android:paddingTop="42dp"
-        android:text="Please set your sleep hours below. Note that the app will not send notifications during your selected sleep period."
+        android:text="請設定你的睡眠時間，這個應用程式不會在你設定的睡眠時間發送任何通知。"
         android:textSize="22sp" />
 
     <Space
@@ -18,7 +18,7 @@
         android:layout_height="16dp" />
 
     <TextView
-        android:text="When do you usually go to sleep?"
+        android:text="你通常甚麼時間就寢呢?"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/Start_time"
@@ -32,7 +32,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal|center"
         android:gravity="center"
-        android:text="BED TIME"
+        android:text="睡眠時間"
         android:textSize="26sp" />
 
     <Space
@@ -40,7 +40,7 @@
         android:layout_height="28dp" />
 
     <TextView
-        android:text="When do you usually wake up?"
+        android:text="你通常幾點起床呢?"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/End_time"
@@ -52,7 +52,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal|center"
-        android:text="WAKE TIME"
+        android:text="起床時間"
         android:textSize="26sp" />
 
     <Space
@@ -64,7 +64,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="confirm"
+        android:text="確認"
         android:textSize="26sp" />
 
 </LinearLayout>

@@ -75,7 +75,7 @@ public class OhioLinkListAdapter extends ArrayAdapter<String> {
             if(!dataPos.contains(pos)) {
                 String dataFromlocal = data.get(pos);
                 //Log.d(TAG, " dataFromlocal : " + dataFromlocal);
-                String survey = "Survey "+(pos+1);
+                String survey = "問卷 "+(pos+1);
                 textView.setText(survey);
                 textView.setTextColor(Color.GRAY);
                 view.setClickable(false);
@@ -85,7 +85,7 @@ public class OhioLinkListAdapter extends ArrayAdapter<String> {
                 String link = dataFromlocal;
                 //Log.d(TAG, " link : " + link);
 //                textView.setText(Html.fromHtml(link));
-                String survey = "Survey "+(pos+1);
+                String survey = "問卷 "+(pos+1);
                 textView.setText(survey);
                 textView.setTextColor(Color.RED);
 //                if(data.size()==(pos+1)){ //when the newest link haven't been done.
@@ -107,7 +107,7 @@ public class OhioLinkListAdapter extends ArrayAdapter<String> {
             String link = dataFromlocal;
             //Log.d(TAG, " link : " + link);
 //            textView.setText(Html.fromHtml(link));
-            String survey = "Survey "+(position+1);
+            String survey = "問卷 "+(position+1);
             textView.setText(survey);
             textView.setTextColor(Color.GRAY);
         }

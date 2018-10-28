@@ -51,8 +51,8 @@ public class SessionManager {
     public static final String ANNOTATION_PROPERTIES_CONTENT = "Content";
     public static final String ANNOTATION_PROPERTIES_TAG = "Tag";
 
-    public static final String SESSION_DISPLAY_ONGOING = "Ongoing...";
-    public static final String SESSION_DISPLAY_NO_ANNOTATION = "Incomplete";
+    public static final String SESSION_DISPLAY_ONGOING = "行程還在記錄";
+    public static final String SESSION_DISPLAY_NO_ANNOTATION = "未完成";
 
     public static final String SESSION_LONGENOUGH_THRESHOLD_DISTANCE = "distance";
 

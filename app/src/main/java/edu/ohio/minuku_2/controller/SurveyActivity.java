@@ -49,11 +49,11 @@ public class SurveyActivity extends Activity {
 
     private SharedPreferences sharedPrefs;
 
-    private final String TEXT_Unavailable = "Unavailable";
-    private final String TEXT_Available = " Available ";/*the space is to padding the border*/
-    private final String TEXT_COMPLETED = "Activated";
-    private final String TEXT_MISSED = "Missed";
-    private final String TEXT_ERROR = "Error";
+    private final String TEXT_Unavailable = "尚未提供";
+    private final String TEXT_Available = " 可使用";/*the space is to padding the border*/
+    private final String TEXT_COMPLETED = "已被啟用";
+    private final String TEXT_MISSED = "已錯過";
+    private final String TEXT_ERROR = "錯誤";
 
 
     public void onCreate(Bundle savedInstanceState) {

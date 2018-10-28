@@ -18,7 +18,7 @@
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
         android:layout_marginTop="16dp"
-        android:text="confirm"
+        android:text="確認"
         android:visibility="visible" />
 
     <!-- empty view -->
@@ -35,7 +35,7 @@
             android:layout_height="wrap_content"
             android:paddingLeft="16dp"
             android:paddingRight="16dp"
-            android:text="No trips available yet."
+            android:text="還沒有任何行程紀錄"
             android:textSize="24sp" />
 
     </LinearLayout>

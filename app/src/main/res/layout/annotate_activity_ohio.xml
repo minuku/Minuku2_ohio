@@ -32,7 +32,7 @@
                     android:layout_marginRight="8dp"
                     android:layout_marginTop="5dp"
                     android:layout_weight="1"
-                    android:text="combine" />
+                    android:text="合併" />
 
                 <Button
                     android:id="@+id/split"
@@ -42,7 +42,7 @@
                     android:layout_marginRight="8dp"
                     android:layout_marginTop="5dp"
                     android:layout_weight="1"
-                    android:text="split" />
+                    android:text="拆分" />
 
                 <Button
                     android:id="@+id/delete"
@@ -52,11 +52,11 @@
                     android:layout_marginRight="16dp"
                     android:layout_marginTop="5dp"
                     android:layout_weight="1"
-                    android:text="delete" />
+                    android:text="刪除" />
             </LinearLayout>
 
             <TextView
-                android:text="Time:"
+                android:text="時間:"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/Time"
@@ -64,7 +64,7 @@
                 android:paddingLeft="16dp" />
 
             <TextView
-                android:text="Please confirm your trip displayed above."
+                android:text="請確認並標記這趟行程"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/question1"
@@ -80,54 +80,54 @@
                 android:paddingTop="5dp">
 
                 <RadioButton
-                    android:text="Walking outdoors"
+                    android:text="在戶外走路"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/ans1_1"
                     android:layout_weight="1" />
                 <RadioButton
-                    android:text="Walking indoors"
+                    android:text="在室內走路"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/ans1_2"
                     android:layout_weight="2" />
 
                 <RadioButton
-                    android:text="Riding a bicycle"
+                    android:text="騎自行車"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/ans1_3"
                     android:layout_weight="3" />
 
                 <RadioButton
-                    android:text="Riding a scooter"
+                    android:text="騎摩托車"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/ans1_4"
                     android:layout_weight="4" />
 
                 <RadioButton
-                    android:text="Driving (I'm the driver)"
+                    android:text="開車(身為駕駛)"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/ans1_5"
                     android:layout_weight="5" />
                 <RadioButton
-                    android:text="Driving (I'm the passenger)"
+                    android:text="坐車(身為乘客)"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/ans1_6"
                     android:layout_weight="6" />
 
                 <RadioButton
-                    android:text="Taking a bus"
+                    android:text="搭巴士"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/ans1_7"
                     android:layout_weight="7" />
 
                 <RadioButton
-                    android:text="Other transportation"
+                    android:text="其他交通方式"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/ans1_8"
@@ -150,7 +150,7 @@
             </RadioGroup>
 
             <TextView
-                android:text="Did you make this trip by yourself?"
+                android:text="這趟行程你獨自行動嗎?"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/question2"
@@ -168,14 +168,14 @@
                 android:paddingTop="5dp">
 
                 <RadioButton
-                    android:text="Yes"
+                    android:text="是，我獨自行動"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/ans2_1"
                     android:layout_weight="1" />
 
                 <RadioButton
-                    android:text="No"
+                    android:text="不，我和別人一起"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/ans2_2"
@@ -184,7 +184,7 @@
             </RadioGroup>
 
             <TextView
-                android:text="How new or familiar did this route feel to you?"
+                android:text="這條路線對你有多陌生或是熟悉呢?"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/question3"
@@ -202,28 +202,28 @@
                 android:paddingTop="5dp">
 
                 <RadioButton
-                    android:text="Very new"
+                    android:text="非常陌生"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/ans3_1"
                     android:layout_weight="1" />
 
                 <RadioButton
-                    android:text="Somewhat new"
+                    android:text="有點陌生"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/ans3_2"
                     android:layout_weight="1" />
 
                 <RadioButton
-                    android:text="Somewhat familiar"
+                    android:text="有點熟悉"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/ans3_3"
                     android:layout_weight="1" />
 
                 <RadioButton
-                    android:text="Very familiar"
+                    android:text="非常熟悉"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/ans3_4"
@@ -239,7 +239,7 @@
                 android:paddingLeft="16dp"
                 android:paddingRight="16dp"
                 android:paddingTop="16dp"
-                android:text="How did you choose this destination?"
+                android:text="你甚麼時候做出決定選擇要前往這個地方的? "
                 android:textSize="18sp" />
 
             <RadioGroup
@@ -250,28 +250,28 @@
                 android:paddingTop="5dp">
 
                 <RadioButton
-                    android:text='Part of my normal routine'
+                    android:text='這是我常會到的地方之一'
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/ans4_1"
                     android:layout_weight="1" />
 
                 <RadioButton
-                    android:text='Decided on right before'
+                    android:text='就在不久前決定來這裡的'
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/ans4_2"
                     android:layout_weight="1" />
 
                 <RadioButton
-                    android:text='Planned earlier on same day'
+                    android:text='在今天的稍早決定的'
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/ans4_3"
                     android:layout_weight="1" />
 
                 <RadioButton
-                    android:text='Preplanned on prior day'
+                    android:text='在今天之前就決定的'
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/ans4_4"
@@ -286,7 +286,7 @@
                 android:paddingLeft="16dp"
                 android:paddingRight="16dp"
                 android:paddingTop="16dp"
-                android:text="Optional notes:"
+                android:text="註記:"
                 android:textSize="18sp" />
 
             <EditText
@@ -301,7 +301,7 @@
                 android:layout_height="20dp" />
 
             <Button
-                android:text="submit"
+                android:text="送出"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/submit"

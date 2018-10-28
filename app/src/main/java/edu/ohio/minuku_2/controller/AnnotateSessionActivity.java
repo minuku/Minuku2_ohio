@@ -24,6 +24,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -481,9 +482,9 @@ public class AnnotateSessionActivity extends Activity implements OnMapReadyCallb
         Polyline path = map.addPolyline(pathPolyLineOption);
 
         //after getting the start and ened point of location trace, we put a marker
-        map.addMarker(new MarkerOptions().position(startLatLng).title("Start"))
+        map.addMarker(new MarkerOptions().position(startLatLng).title("開始"))
                 .setIcon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_GREEN));
-        map.addMarker(new MarkerOptions().position(endLatLng).title("End"));
+        map.addMarker(new MarkerOptions().position(endLatLng).title("結束"));
 
     }
 
@@ -605,7 +606,7 @@ public class AnnotateSessionActivity extends Activity implements OnMapReadyCallb
                 }else{
 
                     RadioButton radioButton = (RadioButton) findViewById(checkedId);
-                    ans1 = radioButton.getText().toString();
+                    ans1 = answerChtToEng(radioButton.getText().toString());
                 }
             }
         });
@@ -620,7 +621,7 @@ public class AnnotateSessionActivity extends Activity implements OnMapReadyCallb
                 }else{
 
                     RadioButton radioButton = (RadioButton) findViewById(checkedId);
-                    ans2 = radioButton.getText().toString();
+                    ans2 = answerChtToEng(radioButton.getText().toString());
                 }
             }
         });
@@ -635,7 +636,7 @@ public class AnnotateSessionActivity extends Activity implements OnMapReadyCallb
                 }else{
 
                     RadioButton radioButton = (RadioButton) findViewById(checkedId);
-                    ans3 = radioButton.getText().toString();
+                    ans3 = answerChtToEng(radioButton.getText().toString());
                 }
 
             }
@@ -651,7 +652,7 @@ public class AnnotateSessionActivity extends Activity implements OnMapReadyCallb
                 }else{
 
                     RadioButton radioButton = (RadioButton) findViewById(checkedId);
-                    ans4 = radioButton.getText().toString();
+                    ans4 = answerChtToEng(radioButton.getText().toString());
                 }
             }
         });
@@ -723,7 +724,7 @@ public class AnnotateSessionActivity extends Activity implements OnMapReadyCallb
 
             RadioButton button = (RadioButton) ques.getChildAt(i);
 
-            if (button.getText().toString().equals(ans)){
+            if (button.getText().toString().equals(answerEngToCht(ans))){
 
                 button.setChecked(true);
             }
@@ -978,6 +979,50 @@ public class AnnotateSessionActivity extends Activity implements OnMapReadyCallb
             Log.d(TAG, "[test show trip] in onPostExecute, the poitns obtained are : " + points.size());
         }
 
+    }
+    public String answerChtToEng(String answer) {
+
+        if (answer.equals(((RadioButton)findViewById(R.id.ans1_1)).getText().toString())) return "Walking outdoors";
+        else if (answer.equals(((RadioButton)findViewById(R.id.ans1_2)).getText().toString())) return "Walking indoors";
+        else if (answer.equals(((RadioButton)findViewById(R.id.ans1_3)).getText().toString())) return "Riding a bicycle";
+        else if (answer.equals(((RadioButton)findViewById(R.id.ans1_4)).getText().toString())) return "Riding a scooter";
+        else if (answer.equals(((RadioButton)findViewById(R.id.ans1_5)).getText().toString())) return "Driving (I'm the driver)";
+        else if (answer.equals(((RadioButton)findViewById(R.id.ans1_6)).getText().toString())) return "Driving (I'm the passenger)";
+        else if (answer.equals(((RadioButton)findViewById(R.id.ans1_7)).getText().toString())) return "Taking a bus";
+        else if (answer.equals(((RadioButton)findViewById(R.id.ans1_8)).getText().toString())) return "Other transportation";
+        else if (answer.equals(((RadioButton)findViewById(R.id.ans2_1)).getText().toString())) return "Yes";
+        else if (answer.equals(((RadioButton)findViewById(R.id.ans2_2)).getText().toString())) return "No";
+        else if (answer.equals(((RadioButton)findViewById(R.id.ans3_1)).getText().toString())) return "Very new";
+        else if (answer.equals(((RadioButton)findViewById(R.id.ans3_2)).getText().toString())) return "Somewhat new";
+        else if (answer.equals(((RadioButton)findViewById(R.id.ans3_3)).getText().toString())) return "Somewhat familiar";
+        else if (answer.equals(((RadioButton)findViewById(R.id.ans3_4)).getText().toString())) return "Very familiar";
+        else if (answer.equals(((RadioButton)findViewById(R.id.ans4_1)).getText().toString())) return "Part of my normal routine";
+        else if (answer.equals(((RadioButton)findViewById(R.id.ans4_2)).getText().toString())) return "Decided on right before";
+        else if (answer.equals(((RadioButton)findViewById(R.id.ans4_3)).getText().toString())) return "Planned earlier on same day";
+        else if (answer.equals(((RadioButton)findViewById(R.id.ans4_4)).getText().toString())) return "Preplanned on prior day";
+        else return answer;
+    }
+
+    public String answerEngToCht(String answer) {
+        if (answer.equals("Walking outdoors")) return ((RadioButton)findViewById(R.id.ans1_1)).getText().toString();
+        else if (answer.equals("Walking indoors")) return ((RadioButton)findViewById(R.id.ans1_2)).getText().toString();
+        else if (answer.equals("Riding a bicycle")) return ((RadioButton)findViewById(R.id.ans1_3)).getText().toString();
+        else if (answer.equals("Riding a scooter")) return ((RadioButton)findViewById(R.id.ans1_4)).getText().toString();
+        else if (answer.equals("Driving (I'm the driver)")) return ((RadioButton)findViewById(R.id.ans1_5)).getText().toString();
+        else if (answer.equals("Driving (I'm the passenger)")) return ((RadioButton)findViewById(R.id.ans1_6)).getText().toString();
+        else if (answer.equals("Taking a bus")) return ((RadioButton)findViewById(R.id.ans1_7)).getText().toString();
+        else if (answer.equals("Other transportation")) return ((RadioButton)findViewById(R.id.ans1_8)).getText().toString();
+        else if (answer.equals("Yes")) return ((RadioButton)findViewById(R.id.ans2_1)).getText().toString();
+        else if (answer.equals("No")) return ((RadioButton)findViewById(R.id.ans2_2)).getText().toString();
+        else if (answer.equals("Very new")) return ((RadioButton)findViewById(R.id.ans3_1)).getText().toString();
+        else if (answer.equals("Somewhat new")) return ((RadioButton)findViewById(R.id.ans3_2)).getText().toString();
+        else if (answer.equals("Somewhat familiar")) return ((RadioButton)findViewById(R.id.ans3_3)).getText().toString();
+        else if (answer.equals("Very familiar")) return ((RadioButton)findViewById(R.id.ans3_4)).getText().toString();
+        else if (answer.equals("Part of my normal routine")) return ((RadioButton)findViewById(R.id.ans4_1)).getText().toString();
+        else if (answer.equals("Decided on right before")) return ((RadioButton)findViewById(R.id.ans4_2)).getText().toString();
+        else if (answer.equals("Planned earlier on same day")) return ((RadioButton)findViewById(R.id.ans4_3)).getText().toString();
+        else if (answer.equals("Preplanned on prior day")) return ((RadioButton)findViewById(R.id.ans4_4)).getText().toString();
+        else return answer;
     }
 
 }

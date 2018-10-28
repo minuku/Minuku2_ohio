@@ -12,7 +12,7 @@
         android:layout_marginTop="8dp"
         android:layout_weight="1"
         android:gravity="center"
-        android:text="Please click the map to set the split point."
+        android:text="請點擊地圖以選擇拆分起始點"
         android:textSize="16sp" />
 
     <com.google.android.gms.maps.MapView xmlns:android="http://schemas.android.com/apk/res/android"

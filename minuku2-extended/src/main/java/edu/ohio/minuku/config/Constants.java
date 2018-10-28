@@ -123,16 +123,16 @@ public class Constants {
     public static final String APP_NAME = "DMS";
     public static final String APP_FULL_NAME = "Daily Mobility Study";
 
-    public static final String NOTIFICATION_TEXT_DAY_0 = "Part B begins at 12am and continues for 2 weeks.";
-    public static final String NOTIFICATION_TEXT_LOCATION = "Please check your location permission.";
-    public static final String NOTIFICATION_TEXT_APPUSAGE = "Please check your usage access permission.";
-    public static final String NOTIFICATION_TEXT_NEW_TRIP = " New Trip";
-    public static final String NOTIFICATION_TEXT_NEW_TRIPS = " New Trips";
+    public static final String NOTIFICATION_TEXT_DAY_0 = "Part B 將於上午 12:00 開始且為期 14 天";
+    public static final String NOTIFICATION_TEXT_LOCATION = "請確認 \"定位\" 權限";
+    public static final String NOTIFICATION_TEXT_APPUSAGE = "請確認 \"使用紀錄存取\" 權限";
+    public static final String NOTIFICATION_TEXT_NEW_TRIP = " 有新的行程";
+    public static final String NOTIFICATION_TEXT_NEW_TRIPS = " 有新的多個行程";
     public static final String NOTIFICATION_TEXT_FINAL_DAY_PLUS_1_WITH_TRIPS = "Your final trips are available now.";
     public static final String NOTIFICATION_TEXT_FINAL_DAY_PLUS_1_WITHOUT_TRIPS = "Part C will become available tomorrow.";
     public static final String NOTIFICATION_TEXT_AFTER_FINAL_DAY_PLUS_1 = "Part C is available today and lasts 20 mins.";
     public static final String NOTIFICATION_TEXT_AFTER_FINAL_DAY_PLUS_1_WAIT_DATA_TRANSFER
-            = "Connect your phone to WiFi to finish the study.";
+            = "請將手機連上 Wifi 以完成實驗";
 
     public static final long DATA_TRANSFER_TIMEOUT = 10 * MILLISECONDS_PER_SECOND; // 1 * 10 * 1000
 

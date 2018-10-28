@@ -12,7 +12,7 @@
         android:gravity="center"
         android:paddingLeft="16dp"
         android:paddingRight="16dp"
-        android:text="問卷將從明天開始，且連續 14 天都會提供問卷"
+        android:text="行程記錄將從明天開始，且會連續記錄 14 天"
         android:textSize="24sp" />
 
 </LinearLayout>

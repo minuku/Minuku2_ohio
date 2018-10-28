@@ -530,7 +530,8 @@ public class MainActivity extends AppCompatActivity {
                             Config.Email = sharedPrefs.getString("Email", "NA");
 
 
-                            boolean isEmailValid = checkUserInform();
+//                            boolean isEmailValid = checkUserInform();
+                            boolean isEmailValid = true;
 
                             //TODO for testing
 //                            isEmailValid = true;
@@ -544,13 +545,10 @@ public class MainActivity extends AppCompatActivity {
                             //TODO...
 
                             if(isEmailValid){
-
+                                Log.d(TAG, "Valid Email");
                                 sendingUserInform(installedOrNot);
-
                                 startSettingSleepingTime(); //the appearing order is reversed from the code.
-
                                 startpermission();
-
                                 getStartDate();
 
                                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {

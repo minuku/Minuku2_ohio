@@ -432,7 +432,7 @@ public class Sleepingohio extends AppCompatActivity {
 
             builder.setView(layout)
                     .setPositiveButton(R.string.ok, null)
-                    .setNegativeButton("cancel", null);
+                    .setNegativeButton("取消", null);
 
             final AlertDialog mAlertDialog = builder.create();
             mAlertDialog.setOnShowListener(new DialogInterface.OnShowListener() {
@@ -561,7 +561,7 @@ public class Sleepingohio extends AppCompatActivity {
 
             builder.setView(layout)
                     .setPositiveButton(R.string.ok, null)
-                    .setNegativeButton("cancel", null);
+                    .setNegativeButton("取消", null);
 
             final AlertDialog mAlertDialog = builder.create();
             mAlertDialog.setOnShowListener(new DialogInterface.OnShowListener() {
